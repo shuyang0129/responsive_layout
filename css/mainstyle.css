@@ -1,0 +1,50 @@
+/*============================
+Base Element
+============================*/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.625em;
+}
+
+h1 {
+	font-size: 2em;
+	color: #4A4A4A;
+	font-weight: 700;
+}
+
+nav li {
+	font-size: 1.2em;
+	background: #fff;
+	padding: 15px 0;
+	margin: 5px 0;
+}
+
+nav a {
+	display: block;
+	color: #4A4A4A;
+	font-weight: 500;
+}
+
+.intro p {
+	font-size: 1.2em;
+	color: #878787;
+	line-height: 1.5;
+}
+
+/*============================
+Contain Layout
+============================*/
+
+header {
+	background: #FAFAFA;
+	text-align: center;
+}
+
+/*============================
+Media Query
+============================*/
+
+@media (min-width: 768px) {}
+
+@media (min-width: 1024px) {}
