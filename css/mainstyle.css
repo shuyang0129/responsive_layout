@@ -36,6 +36,10 @@ p,
 	margin: 0;
 }
 
+b {
+	font-weight: 500;
+}
+
 /**** Navigation ****/
 
 nav {
@@ -50,13 +54,13 @@ nav li {
 	font-size: 1.2em;
 	background: #fff;
 	margin-top: 5px;
+	padding: 15px 0;
 }
 
 nav a {
 	display: block;
 	color: #4A4A4A;
 	font-weight: 500; /* Medium */
-	padding: 15px 0;
 }
 
 .section-title {
@@ -105,9 +109,9 @@ nav a {
 .bottom-caption h2 {
 	display: block;
 	text-align: center;
-	font-size: 1.4em;
+	font-size: 1.2em;
 	color: #4A4A4A;
-	font-weight: 700; /* Bold */
+	font-weight: 500; /* Medium */
 	margin-top: 34px;
 	margin-bottom: 0;
 }
@@ -124,21 +128,31 @@ nav a {
 	float: right;
 }
 
+.bottom-nav {
+	display: none;
+}
+
 /*============================
 Contain Layout
 ============================*/
 
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
 header {
 	background: #FAFAFA;
 	text-align: center;
+	padding-top: 24px;
+	padding-bottom: 43px;
 }
 
 .container {
-	padding: 24px 12px 43px;
-}
-
-main {
-	padding: 0 16px;
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
 }
 
 .portfolio {
@@ -149,7 +163,8 @@ main {
 footer {
 	background: #FAFAFA;
 	text-align: center;
-	padding: 16px 16px 34px;
+	padding-top: 16px;
+	padding-bottom: 34px;
 }
 
 .bottom-caption {
@@ -191,6 +206,63 @@ Clearfix
 Media Query
 ============================*/
 
-@media (min-width: 768px) {}
+@media (min-width: 768px) {
+	nav{
+		text-align: center;
+	}
+	nav ul,
+	nav li {
+		display: inline-block;
+		margin: 0 20px;
+		background-color: transparent;
+	}
+	nav a {
+		display: inline;
+	}
+	.profile-pic {
+		width: 45%;
+		float: right;
+		margin-left: 30px;
+	}
+	.intro {
+		text-align: left;
+	}
+	.container {
+		padding-right: 30px;
+		padding-left: 30px;
+	}
+	.portfolio {
+		width: 45%;
+		margin-right: 2.5%;
+		margin-left: 2.5%;
+		float: left;
+	}
+	.portfolio:nth-child(2n - 4) {
+		clear: left;
+	}
+	.bottom-nav {
+		display: inline-block;
+		float: right;
+		margin-top: 19px;
+	}
+	#back-to-top {
+		display: none;
+	}
+}
 
-@media (min-width: 1024px) {}
+@media (min-width: 1024px) {
+	.portfolio {
+		width: 30%;
+		margin-right: 1.25%;
+		margin-left: 1.25%;
+		float: left;
+	}
+	.portfolio:nth-child(2n - 4) {
+		clear: none;
+	}
+	.portfolio:nth-child(3n - 4) {
+		clear: left;
+	}
+}
+
+
