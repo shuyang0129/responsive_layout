@@ -2,34 +2,94 @@
 Base Element
 ============================*/
 
+/* General */
+
+* {
+	box-sizing: border-box;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 	font-size: 0.625em;
 }
 
+img {
+	width: 100%;
+}
+
+/* Header */
+
 h1 {
-	font-size: 2em;
+	font-size: 2.6em;
 	color: #4A4A4A;
 	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+/* Navigation */
+
+nav {
+	margin-bottom: 43px;
+}
+
+nav ul {
+	margin-bottom: 0;
 }
 
 nav li {
 	font-size: 1.2em;
 	background: #fff;
-	padding: 15px 0;
-	margin: 5px 0;
+	margin-top: 5px;
 }
 
 nav a {
 	display: block;
 	color: #4A4A4A;
 	font-weight: 500;
+	padding: 15px 0;
 }
 
+/* Introduction */
+
 .intro p {
-	font-size: 1.2em;
+	font-size: 1.4em;
+	font-weight: 300;
 	color: #878787;
-	line-height: 1.5;
+	line-height: 1.6;
+	margin: 0;
+}
+
+.profile-pic {
+	width: 200px;
+	margin: 0 0 28px;
+}
+
+/* Main Content */
+
+main h2 {
+	text-align: center;
+	font-size: 1.2em;
+	color: #4A4A4A;
+	font-weight: 700;
+	margin: 40px 0;
+}
+
+.portfolio {
+	text-align: center;
+	margin-bottom: 30px;
+}
+
+.portfolio h3 {
+
+}
+
+.portfolio p {
+	font-size: 1.4em;
+	font-weight: 300;
+	color: #878787;
+	line-height: 1.6;
+	margin: 0;
 }
 
 /*============================
@@ -39,6 +99,15 @@ Contain Layout
 header {
 	background: #FAFAFA;
 	text-align: center;
+	border-top: -1px solid #FAFAFA;
+}
+
+.container {
+	padding: 24px 12px 43px;
+}
+
+main {
+	padding: 16px;
 }
 
 /*============================
