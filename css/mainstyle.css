@@ -2,7 +2,7 @@
 Base Element
 ============================*/
 
-/* General */
+/**** General ****/
 
 * {
 	box-sizing: border-box;
@@ -17,17 +17,26 @@ img {
 	width: 100%;
 }
 
-/* Header */
+/**** Header ****/
 
 h1 {
 	font-size: 2.6em;
 	color: #4A4A4A;
-	font-weight: 700;
+	font-weight: 700; /* Bold */
 	margin-top: 0;
 	margin-bottom: 24px;
 }
 
-/* Navigation */
+p,
+.personal-info {
+	font-size: 1.4em;
+	font-weight: 300; /* Light */
+	color: #878787;
+	line-height: 1.6;
+	margin: 0;
+}
+
+/**** Navigation ****/
 
 nav {
 	margin-bottom: 43px;
@@ -46,50 +55,73 @@ nav li {
 nav a {
 	display: block;
 	color: #4A4A4A;
-	font-weight: 500;
+	font-weight: 500; /* Medium */
 	padding: 15px 0;
 }
 
-/* Introduction */
-
-.intro p {
+.section-title {
+	display: block;
+	text-align: center;
 	font-size: 1.4em;
-	font-weight: 300;
-	color: #878787;
-	line-height: 1.6;
-	margin: 0;
+	color: #4A4A4A;
+	font-weight: 700; /* Bold */
+	margin: 50px 0;
 }
+
+/**** Introduction ****/
 
 .profile-pic {
 	width: 200px;
 	margin: 0 0 28px;
 }
 
-/* Main Content */
+/**** Main Content ****/
 
-main h2 {
-	text-align: center;
-	font-size: 1.2em;
-	color: #4A4A4A;
-	font-weight: 700;
-	margin: 40px 0;
-}
-
-.portfolio {
-	text-align: center;
-	margin-bottom: 30px;
+.portfolio img {
+	margin-bottom: 32px;
 }
 
 .portfolio h3 {
-
+	font-size: 1.8em;
+	font-weight: 400; /* Regular */
+	margin-top: 0;
+	margin-bottom: 18px;
 }
 
-.portfolio p {
+/**** Footer ****/
+
+.personal-info {
+	margin: 40px 0;
+}
+
+.personal-info li {
+	margin-bottom: 22px;
+}
+
+.bottom-caption {
+	margin-top: 62px;
+}
+
+.bottom-caption h2 {
+	display: block;
+	text-align: center;
 	font-size: 1.4em;
-	font-weight: 300;
-	color: #878787;
-	line-height: 1.6;
-	margin: 0;
+	color: #4A4A4A;
+	font-weight: 700; /* Bold */
+	margin-top: 34px;
+	margin-bottom: 0;
+}
+
+.bottom-caption a:visited {
+	color: #4A4A4A;
+}
+
+.footer-left {
+	float: left;
+}
+
+.footer-right {
+	float: right;
 }
 
 /*============================
@@ -99,7 +131,6 @@ Contain Layout
 header {
 	background: #FAFAFA;
 	text-align: center;
-	border-top: -1px solid #FAFAFA;
 }
 
 .container {
@@ -107,7 +138,53 @@ header {
 }
 
 main {
-	padding: 16px;
+	padding: 0 16px;
+}
+
+.portfolio {
+	text-align: center;
+	padding-bottom: 36px;
+}
+
+footer {
+	background: #FAFAFA;
+	text-align: center;
+	padding: 16px 16px 34px;
+}
+
+.bottom-caption {
+	border-top: 1px solid #ECECEC;
+}
+
+/*============================
+Clearfix
+============================*/
+
+/**
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    contenteditable attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that are clearfixed.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
 }
 
 /*============================
