@@ -1,0 +1,41 @@
+/*============================
+Base Element
+============================*/
+
+/**** General ****/
+
+* {
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 0.625em;
+}
+
+img {
+	width: 100%;
+}
+
+/**** Header ****/
+
+h1 {
+	font-size: 2.6em;
+	color: #4A4A4A;
+	font-weight: 700; /* Bold */
+	margin-top: 0;
+	margin-bottom: 24px;
+}
+
+p,
+.personal-info {
+	font-size: 1.4em;
+	font-weight: 300; /* Light */
+	color: #878787;
+	line-height: 1.6;
+	margin: 0;
+}
+
+b {
+	font-weight: 500;
+}
