@@ -1,0 +1,38 @@
+/*============================
+Contain Layout
+============================*/
+
+.wrapper {
+	max-width: 1024px;
+	margin: 0 auto;
+}
+
+header {
+	background: #FAFAFA;
+	text-align: center;
+	padding-top: 24px;
+	padding-bottom: 43px;
+}
+
+.container {
+	max-width: 1024px;
+	margin: 0 auto;
+	padding-left: 16px;
+	padding-right: 16px;
+}
+
+.portfolio {
+	text-align: center;
+	padding-bottom: 36px;
+}
+
+footer {
+	background: #FAFAFA;
+	text-align: center;
+	padding-top: 16px;
+	padding-bottom: 34px;
+}
+
+.bottom-caption {
+	border-top: 1px solid #ECECEC;
+}
